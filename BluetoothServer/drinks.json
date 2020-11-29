@@ -1,0 +1,18 @@
+ [
+        {
+        "name" : "WhiskeySour",
+        "ingredients": {
+            "whiskey" : "2.0", 
+            "sourmix" : "4.0"
+            }
+        },
+        {
+        "name" : "Margarita",
+        "ingredients" : {
+            "tequila" : "2.0", 
+            "limejuice" : "2.0", 
+            "orangeliquer" : ".5", 
+            "simplesyrup" : "1.0"
+            }
+        }
+]
