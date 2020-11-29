@@ -1,5 +1,3 @@
-import 'dart:collection';
-
 class Drink {
   final String name;
   final Map<String, dynamic> ingredients;

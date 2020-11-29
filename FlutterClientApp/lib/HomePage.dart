@@ -92,6 +92,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     }));
   }
 
+/////////////////////////////////////////////////////////////////
+  ///The build and styling of Home Page/////////////////////
+//////////////////////////////////////////////////////
   @override
   Widget build(BuildContext context) {
     return Scaffold(

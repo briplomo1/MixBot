@@ -87,6 +87,9 @@ class _ConnectState extends State<Connect> {
     }
   }
 
+//////////////////////////////////////////////////////////////////////
+  ///The build and styling of Drinks page
+////////////////////////////////////////////////////////////////
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -102,6 +105,7 @@ class _ConnectState extends State<Connect> {
                 children: _drinks.map((drink) {
                   return Padding(
                     padding: EdgeInsets.all(15),
+                    // Every drink in drinks.json will produce one list tile
                     child: ListTile(
                       onTap: () => sendMessage(drink.name),
                       title: Text(drink.name),
