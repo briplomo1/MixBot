@@ -22,7 +22,21 @@ class _ConnectState extends State<Connect> {
   bool isDisconnecting = false;
 
   //Empty list filled by incoming json data
-  List<Drink> _drinks = List<Drink>();
+  List<Map> _drinks = [
+    {
+      "name": "WhiskeySour",
+      "ingredients": {"whiskey": "2.0", "sourmix": "4.0"}
+    },
+    {
+      "name": "Margarita",
+      "ingredients": {
+        "tequila": "2.0",
+        "limejuice": "2.0",
+        "orangeliquer": ".5",
+        "simplesyrup": "1.0"
+      }
+    }
+  ];
 
   @override
   void initState() {
@@ -68,7 +82,7 @@ class _ConnectState extends State<Connect> {
         newData.map((drink) => new Drink.fromJson(drink)).toList();
     print(drinks[0].name);
     setState(() {
-      _drinks = drinks;
+      //_drinks = drinks;
     });
     print(_drinks[0]);
   }

@@ -29,7 +29,6 @@ def runServer(client_sock, client_info, server_sock):
             data = client_sock.recv(1024)
             if data != None:
                 makeDrink(data)
-                
             else:               
                 print('Couldnt make drink')
     except:
